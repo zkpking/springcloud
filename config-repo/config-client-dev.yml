@@ -1,1 +1,2 @@
-auther=waylau.com
+my-config:
+  appName: my-app
