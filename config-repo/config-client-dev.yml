@@ -1,2 +1,21 @@
-my-config:
-  appName: my-app2321321
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zkpking/springcloudconfig.git
+          search-paths: config-repo
+          password: zkpking@gmail.com
+          username: kaider317012784
+
+server:
+  port: 8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  instance:
+    hostname: localhost
