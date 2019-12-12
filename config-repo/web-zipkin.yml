@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: springcloud-zipkin
+server:
+  port: 9411
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  instance:
+    hostname: localhost
+
+management:
+  metrics:
+    web:
+      server:
+        request:
+          autotime:
+            enabled: false
