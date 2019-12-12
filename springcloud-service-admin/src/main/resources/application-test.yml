@@ -1,0 +1,15 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: springcloud-service-admin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

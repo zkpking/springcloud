@@ -1,0 +1,9 @@
+application:
+  yml:
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: web-eureka
+      label: master
+      profile: dev
