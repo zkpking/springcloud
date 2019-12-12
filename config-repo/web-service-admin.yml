@@ -1,13 +1,15 @@
+server:
+  port: 8762
+
 spring:
   application:
     name: springcloud-service-admin
-  zipkin:
-    base-url: http://localhost:9411
-server:
-  port: 8762
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+
 eureka:
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-  instance:
-    hostname: localhost
+      defaultZone: http://localhost:8761/eureka/

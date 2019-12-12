@@ -1,3 +1,6 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: springcloud-config
@@ -10,12 +13,12 @@ spring:
           search-paths: config-repo
           password: zkpking@gmail.com
           username: kaider317012784
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
 
-server:
-  port: 8888
 eureka:
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-  instance:
-    hostname: localhost
+      defaultZone: http://localhost:8761/eureka/
