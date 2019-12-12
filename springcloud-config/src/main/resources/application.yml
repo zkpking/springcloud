@@ -9,7 +9,7 @@ spring:
       profile: dev
       server:
         git:
-          uri: https://github.com/zkpking/springcloudconfig.git
+          uri: https://github.com/zkpking/springcloud.git
           search-paths: config-repo
           password: zkpking@gmail.com
-          username: kaider317012784
+          username: XXXXXX
